@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #3C3744;
+    width: 350px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.upperbox {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center items vertically */
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px;
+    overflow: hidden; /* Hide overflow */
+    min-height: 100px; /* Example: set minimum height to prevent collapsing */
+}
+
+#screen {
+    flex: 1; /* Take up remaining space in flex container */
+    font-size: 40px;
+    text-align: right;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+    max-width: 100%; /* Prevent screen from expanding beyond its container */
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0cbcb;
+    border: none;
+    width: 70px;
+    border-radius: 50%;
+    height: 70px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+
+}
+
+.green {
+    color: green;
+    font-size: 20px;
+}
+
+.orange {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+}

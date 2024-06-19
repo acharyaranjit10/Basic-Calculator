@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upperbox">
+           
+            <!-- <div class="oper">+</div> -->
+            <div id="screen">00</div>
+        </div>
+        <div class="keys">
+            <button class="key green clr" data-action="clear">AC</button>
+            <button class="key green del" data-action="deleteLast" >DEL</button>
+            <button class="key green operators" data-action="percent" symbol="%">%</button>
+            <button class="key green operators" data-action="divide" symbol="/">/</button>
+            <button class="key nums" data-value="7">7</button>
+            <button class="key nums" data-value="8">8</button>
+            <button class="key nums" data-value="9">9</button>
+            <button class="key green operators" data-action="multiply" symbol="*">*</button>
+            <button class="key nums" data-value="4">4</button>
+            <button class="key nums" data-value="5">5</button>
+            <button class="key nums" data-value="6">6</button>
+            <button class="key green operators" data-action="subtract"  symbol="-">-</button>
+            <button class="key nums" data-value="1">1</button>
+            <button class="key nums" data-value="2">2</button>
+            <button class="key nums" data-value="3">3</button>
+            <button class="key green operators" data-action="add" symbol="+">+</button>
+            <button class="key nums" data-value="00">00</button>
+            <button class="key nums" data-value="0">0</button>
+            <button class="key" data-action="decimal" style="font-size: 25px;">.</button>
+            <button class="key orange" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
